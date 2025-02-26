@@ -1,4 +1,4 @@
- server.py
+{ server.py
 
 import requests
 from requests.exceptions import RequestException
@@ -59,5 +59,5 @@ def read_wikipedia_article(url: str) -> str:
     except Exception as e:
         # Catch-all for any other unexpected errors
         raise McpError(ErrorData(INTERNAL_ERROR, f"Unexpected error: {str(e)}")) from e
-
+}
 
